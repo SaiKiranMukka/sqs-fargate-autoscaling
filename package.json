@@ -1,0 +1,22 @@
+{
+  "name": "sqs-fargate-autoscaling",
+  "version": "1.0.0",
+  "description": "Fargate scaling based on the SQS depth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiKiranMukka/sqs-fargate-autoscaling.git"
+  },
+  "author": "Sai Kiran Mukka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaiKiranMukka/sqs-fargate-autoscaling/issues"
+  },
+  "homepage": "https://github.com/SaiKiranMukka/sqs-fargate-autoscaling#readme",
+  "dependencies": {
+    "aws-sdk": "^2.866.0"
+  }
+}

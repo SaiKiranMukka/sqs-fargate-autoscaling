@@ -1,0 +1,26 @@
+service: sqs-fargate-autoscaling
+Description: Scale Fargate based on the SQS depth
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ${opt:region, 'ap-south-1'}
+  stackTags:
+    APP: SQS Fargate Autoscaling
+    STAGE: dev
+
+package:  
+  exclude: 
+    - node_modules/**
+    - package.json
+    - package-lock.json
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  region: ap-south-1 
+   
+resources:
+
+functions:
